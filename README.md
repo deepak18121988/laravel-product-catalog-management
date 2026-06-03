@@ -1,66 +1,241 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Product Catalog Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Project Overview
 
-## About Laravel
+Laravel Product Catalog Management System is a complete catalog management solution developed for businesses that need to manage products, categories, certificates, barcodes, and product information without implementing a full e-commerce checkout process.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The system provides a secure admin panel where administrators can manage product data and display products on a public-facing website.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Features
 
-## Learning Laravel
+### Admin Authentication
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* Secure Login System
+* Session-based Authentication
+* Protected Admin Routes
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Category Management
 
-## Laravel Sponsors
+* Create Category
+* Update Category
+* Delete Category
+* Nested Categories Support
+* Unlimited Category Levels using Parent ID
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+### Shape Management
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+* Create Shape
+* Update Shape
+* Delete Shape
 
-## Contributing
+Examples:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+* Round
+* Oval
+* Custom Shapes
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Product Management
 
-## Security Vulnerabilities
+Manage complete product information:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+* Product Name
+* Product Code
+* SKU
+* Barcode
+* Certificate Number
+* Company Name
+* Weight
+* Price
+* Stock
+* Description
+* Category Assignment
+* Shape Assignment
 
-## License
+Validation:
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* Unique Barcode
+* Unique Certificate Number
+* Unique Product Code
+
+---
+
+### Product Images
+
+* Multiple Images Per Product
+* Primary Image Selection
+* Product Gallery
+
+---
+
+### Certificate Management
+
+* Upload Certificates
+* Store Certificate Number
+* Certificate Verification
+
+---
+
+### Barcode Management
+
+* Generate Product Barcode
+* Barcode Printing
+* Barcode-Based Product Lookup
+
+---
+
+### Product Label Printing
+
+Print product labels containing:
+
+* Product Name
+* SKU
+* Barcode
+* Certificate Number
+* Product Information
+
+---
+
+### Bulk Label Printing
+
+* Print Multiple Product Labels
+* Bulk Barcode Printing
+
+---
+
+### Website Settings
+
+Manage:
+
+* Website Name
+* Contact Information
+* Email Configuration
+* General Settings
+
+---
+
+## Frontend Pages
+
+* Home Page
+* Category Listing Page
+* Product Detail Page
+* About Us Page
+* Contact Us Page
+* FAQ Page
+
+---
+
+## Barcode Product Verification
+
+Customers can scan a product barcode and directly open the product detail page to verify:
+
+* Product Name
+* Product Images
+* Barcode
+* SKU
+* Certificate Number
+* Weight
+* Product Description
+* Shape Information
+
+---
+
+## Technology Stack
+
+* Laravel
+* PHP
+* MySQL
+* Bootstrap 5
+* jQuery
+* AJAX
+* Repository Pattern
+
+---
+
+## Project Structure
+
+* Repository Pattern Architecture
+* AJAX CRUD Operations
+* Reusable Layout Components
+* Bootstrap UI
+* SweetAlert2 Notifications
+
+---
+
+## Current Development Status
+
+### Completed
+
+* Authentication System
+* Repository Pattern Setup
+* Admin Dashboard
+* Category CRUD
+* AJAX Category Management
+* SweetAlert Notifications
+* Layout Components
+
+### Upcoming Modules
+
+* Shape Management
+* Product Management
+* Product Images
+* Product Variants
+* Reviews
+* Certificate Management
+* Barcode Generation
+* Frontend Product Catalog
+
+---
+
+## Installation
+
+Clone Repository
+
+```bash
+git clone https://github.com/your-username/laravel-product-catalog-management.git
+```
+
+Install Dependencies
+
+```bash
+composer install
+```
+
+Copy Environment File
+
+```bash
+cp .env.example .env
+```
+
+Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+Run Migrations
+
+```bash
+php artisan migrate
+```
+
+Start Development Server
+
+```bash
+php artisan serve
+```
+
+---
+
+## Author
+
+Deepak Lohani
+
+Laravel Developer
