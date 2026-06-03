@@ -199,7 +199,7 @@ Customers can scan a product barcode and directly open the product detail page t
 Clone Repository
 
 ```bash
-git clone https://github.com/your-username/laravel-product-catalog-management.git
+git clone https://github.com/deepak18121988/laravel-product-catalog-management.git
 ```
 
 Install Dependencies
